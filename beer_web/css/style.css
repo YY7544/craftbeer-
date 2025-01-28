@@ -1,0 +1,292 @@
+html{
+  font-family: 'Noto sans JP', sans-serif; 
+}
+
+.pop{font-family: 'popping',sans-serif;}
+
+.container{
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* ヘッダー */
+header{
+  padding: 27px 0;
+}
+.logo{
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.logo span{
+  color: #ed5b2d;
+}
+.header_menu li {
+  margin-left: 40px ;
+}
+.header_menu li a {
+  transition: 0.3s;
+}
+.header_menu li a:hover {
+  color: #ed5b2d;
+  transition: 0.3s;
+}
+/* メイン */
+#hero {
+  background-image: url(../image/christin-hume-08tX2fsuSLg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+#hero::before{ 
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.2;
+  z-index: 1;
+}
+.hero_inner{
+  z-index: 2;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+.hero_inner p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.hero_inner h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px; 
+}
+
+/* コンセプト */
+#concept {
+  margin-bottom: 120px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ed5b2d;
+  margin-bottom: 40px;
+}
+#concept h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+.column-2 {
+  width: 48%;
+}
+.text {
+  line-height: 2;
+}
+.concept-img {
+  background-image: url(../image/hop-4828479_1920.png);
+  background-position: center;
+  background-size: cover;
+  height: 360px;
+  border-radius: 20px;
+}
+.heading {
+  font-family: 'Dancing Script', cursive;
+  font-size: 150px;
+  font-weight: 700;
+  color: #ed5b2d;
+  opacity: 0.2;
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  /* transform: translate(-30%); */
+  z-index: 1; 
+}
+
+/* サービス */
+#service {
+  margin-bottom: 120px;
+}
+.service_inner{
+  margin-bottom: 40px;
+  position: relative;
+}
+.column-40 {
+  width: 40%;
+}
+.column-55 {
+  width: 55%;
+}
+/* #service img { */
+  /* border-radius: 20px; */
+/* } */
+.service-img1 {
+  background-image: url(../image/elevate-jNkdYswZ61o-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 20px;
+}
+.service-img2 {
+  background-image: url(../image/gps.png);
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 20px;
+}
+.service-img3 {
+  background-image: url(../image/community.png);
+  background-position: center;
+  background-size: cover;
+  height: 340px;
+  border-radius: 20px;
+}
+#service h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.service {
+  font-family: 'Dancing Script', cursive;
+  font-size: 120px;
+  font-weight: 700;
+  color: #ed5b2d;
+  opacity: 0.2;
+  position: absolute; 
+  top: 0; 
+  right: 0;
+  /* transform: translate(-30%); */
+  z-index: -1;
+}
+
+/* ダウンロード */
+.section5 {
+  text-align: center;
+  margin-bottom: 57px;
+}
+.section5 .container {
+  background-image: url(../image/clem-onojeghuo-zlABb6Gke24-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 540px;
+  border-radius: 30px; 
+  display: flex;
+  align-items: center;
+  margin-bottom: 90px;
+  overflow: hidden;  
+  background-color: #ed5b2d; 
+  width: 70%;   
+  border-radius: 20px;
+  padding: 31px 0 40px;
+}
+.section5 h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 22px;
+  margin: 40px; 
+}
+.section5 img {
+  max-width: 180px;
+  margin-bottom: 27px;
+  margin: 50px;
+}
+.section5 a {
+  font-weight: 700px;
+  display: inline-block;
+  background-color: #ffffff;
+  /* color: #ed5b2d; */
+  padding: 12px 30px 15px;
+  border-radius: 100px;
+  margin: 40px; 
+}
+
+/* カンパニー */
+/*#company {
+  margin-bottom: 120px;
+}
+#company dl {
+  max-width: 900px;
+  margin-left: auto;
+}
+#company dt {
+  width: 30%;
+  padding: 48px 0;
+  font-weight: 500;
+  border-bottom: solid 1px #D2ECBA;
+}
+#company dd {
+  width: 70%;
+  padding: 48px 0;
+  border-bottom: solid 1px #D2ECBA;
+}*/
+
+/* ボトム */
+.column-a {
+  background-image: url(../image/max-beck-uhiT4GIJbog-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 24%;
+  height: 270px;
+  border-radius: 20px;
+}
+.column-b {
+  background-image: url(../image/joaquin-romero-w2E4kk9HxVQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 13%;
+  height: 270px;
+  border-radius: 20px;
+}
+.column-c {
+  background-image: url(../image/francesco-pigozzi-VK5GMT4ZiJY-unsplash.png);
+  background-position: center;
+  background-size: cover;
+  width: 20%;
+  height: 270px;
+  border-radius: 20px;
+}
+/*.column-e {
+  background-image: url(../image/joaquin-romero-w2E4kk9HxVQ-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 10%;
+  height: 270px;
+  border-radius: 20px;
+}*/
+.column-d {
+  background-image: url(../image/svitlana-gn9ej3O7Iqc-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 30%;
+  height: 270px;
+  border-radius: 20px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  margin: 90px 0;
+}
+.copyright {
+  font-size: 12px;
+  margin-top: 40px;
+}
